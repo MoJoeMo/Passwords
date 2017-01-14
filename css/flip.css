@@ -1,0 +1,188 @@
+body{
+	background-color: #98f0d2;
+	
+}
+button{
+	font-size: 18px;
+    border-radius: 5px;
+}
+#beaker {
+    -ms-transform: rotate(-17deg); /* IE 9 */
+    -webkit-transform: rotate(-17deg); /* Chrome, Safari, Opera */
+    transform: rotate(-17deg);
+	width: 25%;
+	margin:20px;
+}
+#computed{
+  color:black;
+}
+.center{
+	margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; 
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+.flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;	
+	margin-right:auto;
+	margin-left: auto;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	/*position: relative;*/
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+.card{
+	height:480px;
+	width:320px;
+	border-radius: 10px;
+}
+#a-num2{
+    float:left;
+}
+#a-name2{    
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+#a-weight2{
+}
+#element{
+	border: 4px solid #ffb74f;
+	border-radius: 10px;
+	width:150px;
+	height auto;
+	margin-left: auto; 
+    margin-right: auto; 
+	
+}
+#one-one{
+	/*background: #b7b7b7;*/
+	color: #001255;
+	text-align: center;
+	font-size: 18px;
+    font-family: 'Rock Salt', cursive;
+}
+#one-two{
+	/*background: #b7b7b7;*/
+	background-color: #D14400;
+	color: #001255;
+	text-align: center;
+	font-size: 22px;
+    
+}
+#two{
+	/*background: #6b6b6b;*/
+	background-color: #D14400;
+}
+#scramble{
+	/*background: #E0E0E0;*/
+	color: #73ffce;
+	text-align: center;
+	font-size: 22px;
+    font-family: 'Graduate', cursive;
+}
+#boom{
+	/*background: #878686;*/
+	color: #595900;
+	text-align: center;
+	font-size: 22px;
+    font-family: 'Special Elite', cursive;
+}
+#banner{
+	text-align: center;
+	font-size: 64px;
+	font-family: 'Fontdiner Swanky', cursive;
+	
+}
+.container{
+	margin: 0 auto;
+	width: auto;
+	display: table;
+}
+.column{
+	display:table-cell;
+	padding: 10px;
+}
+.row{
+	display: table-row;
+}
+.warning{
+    display: hidden;
+}
+.blue-fade{
+	color: #73b8fb;
+	border: 1px solid #004588;
+	background: #73b8fb;
+	background: -moz-linear-gradient(top, #73b8fb 0%, #004588 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #73b8fb), color-stop(100%, #004588));
+	background: -webkit-linear-gradient(top, #73b8fb 0%, #004588 100%);
+	background: -o-linear-gradient(top, #73b8fb 0%, #004588 100%);
+	background: -ms-linear-gradient(top, #73b8fb 0%, #004588 100%);
+	background: linear-gradient(to bottom, #73b8fb 0%, #004588 100%);
+}
+.green-fade{
+	color: #73ffce;
+	border: 1px solid #004c1b;
+	background: #73ffce;
+	background: -moz-linear-gradient(top, #004c1b 0%, #73ffce 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #004c1b), color-stop(100%, #73ffce));
+	background: -webkit-linear-gradient(top, #004c1b 0%, #73ffce 100%);
+	background: -o-linear-gradient(top, #004c1b 0%, #73ffce 100%);
+	background: -ms-linear-gradient(top, #004c1b 0%, #73ffce 100%);
+	background: linear-gradient(to bottom, #004c1b 0%, #73ffce 100%);
+}
+.orange-fade{
+    color: #ff9d59;
+    border: 1px solid #d14400;
+    background: #ff9d59;
+    background: -moz-linear-gradient(top, #ff9d59 0%, #d14400 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9d59), color-stop(100%, #d14400));
+    background: -webkit-linear-gradient(top, #ff9d59 0%, #d14400 100%);
+    background: -o-linear-gradient(top, #ff9d59 0%, #d14400 100%);
+    background: -ms-linear-gradient(top, #ff9d59 0%, #d14400 100%);
+    background: linear-gradient(to bottom, #ff9d59 0%, #d14400 100%);
+}
+.yellow-fade{
+	color: #ffffa6;
+	border: 1px solid #f7c626;
+	background: #ffffa6;
+	background: -moz-linear-gradient(top, #ffffa6 0%, #f7c626 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffa6), color-stop(100%, #f7c626));
+	background: -webkit-linear-gradient(top, #ffffa6 0%, #f7c626 100%);
+	background: -o-linear-gradient(top, #ffffa6 0%, #f7c626 100%);
+	background: -ms-linear-gradient(top, #ffffa6 0%, #f7c626 100%);
+	background: linear-gradient(to bottom, #ffffa6 0%, #f7c626 100%);
+}

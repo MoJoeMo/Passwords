@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passwords</title>
+    <link rel="stylesheet" href="css/flip.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/flip.js"></script>
+</head>
+
+<body>  
+	
+</head>
+<body>
+<div id="banner">Joey Clausen's Password Generator</div>
+<div class="container">
+	<div class="row center">
+		<div id="chemlab" class="column flip-container" >
+			<div class="flipper">
+				<div class="front">
+					<div id="one-one" class="one card blue-fade"><!-- begin chemistry password -->
+						A Password for the Chemist<br />
+						What number child are you?<br  />
+						<input type="textarea" id="child-num" placeholder="Number"/><br />						
+						What is your first name?<br />
+						<input type="textarea" id="first-name" placeholder="First Name"/><br />
+						What year were you born?<br />
+						<input type="textarea" id="birthyear" placeholder="YYYY"/><br />
+						<button onclick="chemistry()">Generate Password</button><br />
+                        <img id="flasks" class="center" src="http://icons.iconarchive.com/icons/iconleak/cerulean/256/science-chemistry-icon.png" style="width:25%;"/>
+					</div><!-- end chemistry password -->
+				</div><!-- end front content -->			
+				<div class="back">
+					<div id="one-two" class="card orange-fade">
+						<img id="beaker" src="http://idahoptv.org/dialogue4kids/images/season11/chemistry/beaker_bubbles.gif" /><br/>
+						Your atomic number would be:<br/> <span id="a-num"></span><br/>
+						Your atomic  name  would be:<br/> <span id="a-name"></span><br/>
+						Your atomic weight would be:<br/> <span id="a-weight"></span><br/>
+                        Your password would be:<br />     <span id="elementpw"></span>
+                        <div id="element">
+                            <span id="a-num2"></span><br />
+                            <span id="a-name2"></span><br />
+                            <span id="a-weight2"></span>
+                        </div>
+					</div>
+				</div><!-- end back content -->
+			</div>
+		</div>
+		
+		<div class="column flip-container">
+			<div id="scramble" class="card green-fade">
+				<div><br />
+					A password for the Football Fan<br /><br /> What year is your car?<br />
+					<input type="textarea" id="year" placeholder="YYYY"/><br />
+					What color is your car?<br  />
+					<input type="textarea" id="color" placeholder="Color"/><br /><br />
+					<button onclick="carPassword()">Generate Password</button><br />
+					Your Password is...<br />					
+					<p id="car-password" style="color:#004c1b;"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column flip-container">
+			<div id="boom" class="card yellow-fade">
+				<div><br />
+					A (somewhat) <br />Random Password<br /><br />
+					Enter your first name:<br />
+					<input type="textarea" id="firstname" placeholder="First Name"/><br />	
+                    Enter your age:<br />
+                    <input type="textarea" id="age" placeholder="Age"/><br /><br />
+					<button onclick="reverse()">Generate Password</button>
+					<h3 id="computed"></h3><br />
+                    <h3 id="warning1" class="warning">Warning...This message</h3>
+                    <h3 id="warning2" class="warning">will self destruct!</h3>
+				</div>
+			</div>
+		</div>
+		
+	</div> <!-- end class="row" -->
+</div>
+</body>
+</html>
